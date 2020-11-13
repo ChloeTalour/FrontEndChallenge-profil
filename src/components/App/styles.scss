@@ -1,0 +1,37 @@
+.app {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  background-image: url('../../assets/images/bg-pattern-top.svg'), url('../../assets/images/bg-pattern-bottom.svg');
+  background-position: left -18em top -15em, right -18em bottom -15em;
+  background-size: 150%, 150%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2em 0em;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+}
+
+
+
+
+@media only screen and (min-width : 768px)  {
+  .app {
+
+    background-position: left -18em top -15em, right -18em bottom -15em;
+    background-size: 100%, 100%;
+  }
+}
+
+@media only screen and (min-width : 1024px)  {
+  .app {
+
+    background-position: left -18em top -30em, right -18em bottom -30em;
+    background-size: 70%, 70%;
+  }
+}
+
+@media only screen and (min-width : 1440px)  {
+  .app {
+    background-size: 50%, 50%;
+  }
+}

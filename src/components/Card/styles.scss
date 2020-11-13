@@ -1,0 +1,80 @@
+.card {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  &__background {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  &__content {
+    position: relative;
+    &--img {
+      border-radius: 50%;
+      box-sizing: border-box;
+      padding: .3em;
+      margin-bottom: 0;
+      position: absolute;
+      top: -1%; left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+    }
+    &--name {
+      display: block;
+      padding-top: 4.5em;
+      text-align: center;
+      font-weight: bold;
+      & span {
+        color: hsl(0, 0%, 59%);
+        font-weight: normal;
+      }
+    }
+    &--city {
+      text-align: center;
+      display: block;
+      border-bottom: 1px solid lightgrey;
+      padding: .8em 1em 1.5em;
+      color: hsl(0, 0%, 59%);
+      margin-bottom: 1em;
+    }
+
+    &--stat {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      & li {
+        font-weight: bold;
+        padding: .5em 1em 0em;
+        margin-bottom: 1em;
+        transition: background-color .5s;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(211, 211, 211, 0.411);
+        }
+      }
+
+      & span {
+        font-weight: normal;
+        font-size: .8em;
+        display: block;
+        color: hsl(0, 0%, 59%);
+        padding-top: .5em;
+        letter-spacing: .1em;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width : 768px)  {
+  .card {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width : 1024px)  {
+  .card {
+    width: 25%;
+  }
+}
